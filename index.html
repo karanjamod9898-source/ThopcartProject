@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thop-cart</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/assets/images/Logo-Dark.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!------------   Header-Section   -->
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="brand">
+                <img src="assets/images/Logo-Dark.png" alt="img-dark" class="img-fluid img-dark">
+                <img src="assets/images/Logo-Light.png" alt="img-light" class="img-fluid img-light">
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <div class="nav-list">
+                <label for="menu-toggle" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <li><a class="nav-link" href="javascript:void(0)">Home</a></li>
+                <li><a class="nav-link" href="javascript:void(0)">Categories</a></li>
+                <li><a class="nav-link" href="javascript:void(0)">Blogs</a></li>
+                <li><a class="nav-link" href="javascript:void(0)">About</a></li>
+                <li><a class="nav-link" href="javascript:void(0)">Contact Us</a></li>
+            </div>
+
+            <div class="d-flex gap-3 align-items-baseline">
+                <label for="menu-toggle" class="nav-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="search-box desktop-search">
+                    <input type="text" placeholder="Search" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="d-flex gap-2">
+                    <div class="user-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="shop-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------   Main-Section   -->
+
+    <div class="main-class">
+        <div class="container">
+            <div class="row g-3 justify-content-between">
+
+                <!-- Left Section -->
+
+                <div class="col-lg-5 col-md-12 content-card position-relative">
+                    <h1 class="fw-bold position-relative">Discover New<br>Collection
+                        <span class="theme-toggle">
+                            <button id="theme-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1f1f1f">
+                                    <path
+                                        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1f1f1f">
+                                    <path
+                                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                                </svg>
+                            </button>
+                        </span>
+                    </h1>
+                    <p class="mt-3 text-color">
+                        Fashion is part of the daily air and it changes all the time, <br> with all the events.
+                    </p>
+
+                    <div class="btn-calss-main">
+                        <h3>#01</h3>
+                        <button class="btn-shop">Start Shopping <i
+                                class="fa-solid fa-arrow-right fa-rotate-by"></i></button>
+                    </div>
+
+                    <div class="review-imgs">
+                        <div class="review-list">
+                            <img src="assets/images/review-1.png" class="review-img">
+                            <img src="assets/images/review-2.png" class="review-img">
+                            <img src="assets/images/review-3.png" class="review-img">
+                            <span class="ms-3">15K Well <br> Reviews</span>
+                        </div>
+
+                        <div class="discount-text">
+                            <h2>25%</h2>
+                            <small>Off New Arrivals</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Section  -->
+
+                <div class="col-lg-7 right-side-main row">
+                    <div class="slider1" id="slider1">
+
+                        <div class="card large">
+                            <img src="assets/images/main-section-shoes.png" alt="Shoes">
+                            <div class="label">Shoes</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/main-section-girl.png" alt="Clothing">
+                            <div class="label">Clothing</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/main-section-accecers.png" alt="Accessories" class="px-2">
+                            <div class="label">Accessories</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------  Feacharsh-Products    -->
+    <div class="feature-product">
+        <div class="container">
+            <div class="back-feature row">
+                <div class="col-lg-8 justify-content-center m-auto">
+                    <div class="row row-cols-1 row-cols-md-3 p-3">
+
+                        <div class="col-lg-4">
+                            <div class="card" style="background-color: rgba(255, 240, 194, 1); border-radius: 20px;">
+                                <img src="assets/images/products-cap.png" class="card-img-top" alt="cap">
+                                <h4>Cap</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 Feachar-marg position-relative">
+                            <div class="card" style="background-color: rgba(255, 225, 209, 1); border-radius: 20px;">
+                                <img src="assets/images/products-parfume.png" class="card-img-top" alt="perfume">
+                                <h4>Perfumes</h4>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <button class="btn-shop1 d-flex">
+                                    Start Shopping
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card product-img-3"
+                                style="background-color: rgba(255, 187, 149, 1); border-radius: 20px;">
+                                <img src="assets/images/products-shoes.png" class="card-img-top" alt="shoes1">
+                                <h4>Sneakers</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 product-detail">
+                    <h2 style="font-weight: bold;">Our Feature Product</h2>
+                    <p style="font-size: 15px;">If we define Buzz buy in three words, it will be elegant, classic, and
+                        high-quality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------category-section---------- -->
+
+    <div class="category-section">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between"
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1 class="text-class fw-bold">Browse By Category</h1>
+                </div>
+                <div class="category-btns gap-2 d-flex">
+                    <button class="caregory-btn11 left-btn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="caregory-btn11 right-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="slider-container" id="sliderContainer">
+                <div class="slider" id="slider">
+                    <div class="slide active">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Phones</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fa-solid fa-desktop"></i>
+                        <p>Computers</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>SmartWatch</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <p>Camera</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fa-solid fa-headphones"></i>
+                        <p>HeadPhones</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <p>Gaming</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <p>Bag</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ Products-Section ----------- -->
+
+    <div class="discount-products" id="products">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="fw-bold text-class">Discounted Products</h1>
+                </div>
+                <div class="discount-more">
+                    <button class="discount-more-btn">
+                        <i class="fa-solid fa-arrow-right fa-rotate-by"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 gy-3 Product-card">
+                    <div class="card Product-free">
+                        <div class="member-img">
+                            <a href="javascript:void(0)">
+                                <img src="assets/images/product-sirt.png" alt="Product1"
+                                    class="img- fluid position-relative">
+                                <i id="heartIcon" class="fa-solid fa-heart heart"></i> </a>
+                        </div>
+                    </div>
+                    <ul class="p-2">
+                        <h5 class="pt-3 fw-bold text-class">The north coat</h5>
+                        <span class="d-flex gap-2">
+                            <p class="mb-1 text-danger">$260</p>
+                            <p class="mb-1 text-secondary text-decoration-line-through">$360</p>
+                        </span>
+                        <div class="rate col text-secondary">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            (65)
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 Product-card col-md-6 gy-3">
+                    <div class="card Product-free">
+                        <div class="member-img">
+                            <a href="javascript:void(0)">
+                                <img src="assets/images/product-bag.png" alt="Product2"
+                                    class="img-fluid position-relative">
+                                <i id="heartIcon" class="fa-solid fa-heart heart"></i> </a>
+                        </div>
+                    </div>
+                    <ul class="p-2">
+                        <h5 class="pt-3 fw-bold text-class">Gucci duffle bag</h5>
+                        <span class="d-flex gap-2">
+                            <p class="mb-1 text-danger">$960</p>
+                            <p class="mb-1 text-secondary text-decoration-line-through">$1160</p>
+                        </span>
+                        <div class="rate col text-secondary">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            (65)
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 Product-card col-md-6 gy-3">
+                    <div class="card Product-free">
+                        <div class="member-img">
+                            <a href="javascript:void(0)">
+                                <img src="assets/images/product-specker.png" alt="Product2"
+                                    class="img-fluid position-relative">
+                                <i id="heartIcon" class="fa-solid fa-heart heart"></i> </a>
+                        </div>
+                    </div>
+                    <ul class="p-2">
+                        <h5 class="pt-3 fw-bold text-class">RGB liquid CPU Cooler</h5>
+                        <span class="d-flex gap-2">
+                            <p class="mb-1 text-danger">$160</p>
+                            <p class="mb-1 text-secondary text-decoration-line-through">$170</p>
+                        </span>
+                        <div class="rate col text-secondary">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            (65)
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 Product-card col-md-6 gy-3">
+                    <div class="card Product-free">
+                        <div class="member-img">
+                            <a href="javascript:void(0)">
+                                <img src="assets/images/product-table.png" alt="Product4"
+                                    class="img-fluid position-relative">
+                                <i id="heartIcon" class="fa-solid fa-heart heart"></i> </a>
+                        </div>
+                    </div>
+                    <ul class="p-2">
+                        <h5 class="pt-3 fw-bold text-class">Small BookSelf</h5>
+                        <span class="d-flex gap-2">
+                            <p class="mb-1 text-danger">$360</p>
+                            <!-- <p class="mb-1 text-secondary text-decoration-line-through">$360</p> -->
+                        </span>
+                        <div class="rate col text-secondary">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            (65)
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------ Arrival-Section------------------- -->
+
+    <div class="arrival">
+        <div class="container my-4">
+            <div class="row g-3">
+                <h1>New Arrival</h1>
+                <!-- -----Left-Section----- -->
+
+                <div class="col-lg-6 col-md-12 large-card">
+                    <div class="product-card">
+                        <img src="assets/images/arrival-ps5.png" class="img-fluid Left-img-arrival" alt="PlayStation 1">
+                        <div class="overlay">
+                            <h3>PlayStation 5</h3>
+                            <p>Black and White version of the PS5 coming out on sale.</p>
+                            <a href="javascript:void(0)">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="product-card medium-card">
+                                <img src="assets/images/arrival-girl.png" class="img-fluid" alt="Women's Collections">
+                                <div class="overlay">
+                                    <h3>Women's Collections</h3>
+                                    <p>Featured woman collections that give you another vibe.</p>
+                                    <a href="javascript:void(0)">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-12">
+                            <div class="product-card small-card">
+                                <img src="assets/images/arrival-specker.png" class="img-fluid" alt="Speakers">
+                                <div class="overlay">
+                                    <h3>Speakers</h3>
+                                    <p>Amazon wireless speakers</p>
+                                    <a href="javascript:void(0)">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-12">
+                            <div class="product-card small-card">
+                                <img src="assets/images/arrival-perfume.png" class="img-fluid" alt="Perfume">
+                                <div class="overlay">
+                                    <h3>Perfume</h3>
+                                    <p>GUCCI INTENSE-OUD EDP</p>
+                                    <a href="javascript:void(0)">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------- About-us ----------------------- -->
+
+    <div class="about-us" id="products">
+        <div class="container">
+            <h1 class="fw-bold text-class">About Us</h1>
+
+            <div class="row align-start" style="align-items: self-end;">
+                <!-- Left Side: Image -->
+                <div class="col-lg-4 gy-3">
+                    <div class="card about-free">
+                        <div class="about-img">
+                            <img src="assets/images/About-us-girl.png" alt="girl-btn" style="object-fit: contain;">
+                            <div class="Play-img">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/play-cricle.png" alt="play-img" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Cards -->
+                <div class="col-lg-8 gy-3">
+                    <div class="row about-right-cards">
+                        <div class="col-lg-4 col-md-6 gy-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-tree-city"></i>
+                                <h2>Large Assortment</h2>
+                                <p>We offer many different types of products with fewer variations in each category.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 gy-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-box-open"></i>
+                                <h2>Fast & Free Shipping</h2>
+                                <p>We offer many different types of products with fewer variations in each category.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 gy-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <h2>24/7 Support</h2>
+                                <p>We offer many different types of products with fewer variations in each category.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Row -->
+        </div>
+    </div>
+
+    <!-- -------------------- Fotter_part------------- -->
+
+    <div class="fotter">
+        <div class="container">
+            <div class="row pt-5 text-center">
+                <div class="col-lg-3 col-md-6 col-12 align-content-center">
+                    <div class="brand-fotter text-center">
+                        <img src="assets/images/Logo-dark.png" alt="img-dark" class="img-fluid">
+                    </div>
+                    <p class="pt-3">Experience personalized medical care from the comfort of your home.</p>
+                    <div class="icons mb-4">
+                        <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 fotter-links">
+                    <h4 class="color-class">Account</h4>
+                    <ul>
+                        <li><a href="javascript:void(0);">My Account</a></li>
+                        <li><a href="javascript:void(0);">Login / Register</a></li>
+                        <li><a href="javascript:void(0);">Cart</a></li>
+                        <li><a href="javascript:void(0);">Wishlist</a></li>
+                        <li><a href="javascript:void(0);">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 fotter-links">
+                    <h4 class="color-class">Quick Link</h4>
+                    <ul>
+                        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0);">Terms Of Use </a></li>
+                        <li><a href="javascript:void(0);">FAQ</a></li>
+                        <li><a href="javascript:void(0);">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 fotter-links">
+                    <h4 class="color-class">Subscribe</h4>
+                    <p>Get 10% off your first order</p>
+                    <div class="position-relative">
+                        <input type="email" name="Email" id="email" placeholder="Enter Your Email" class="fotter-input">
+                        <a href="javascript:void(0)"><i class="fa-regular fa-paper-plane fa-rotate-by fotter-icon"
+                                style="--fa-rotate-angle: 50deg;"></i></a>
+                    </div>
+                </div>
+
+                <hr>
+                <p class="text-secondary">© Copyright Rimel 2022. All right reserved </p>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="https://google.com" target="_top">Open Google</a>
+
+
+    <script src="assets/js/style.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</body>
+
+</html>
